@@ -2,6 +2,10 @@ package com.uca.capas.domain;
 
 public class Student {
 	
+	public Student() {
+		
+	}
+	
 	private String nombre;
 	private String apellido;
 	private String fEntrada;
@@ -48,5 +52,8 @@ public class Student {
 		this.estado = estado;
 	}
 	
+	public String delegateEstado() {
+		return estado ? "Activado":"Inactivo";
+	}
 	
 }

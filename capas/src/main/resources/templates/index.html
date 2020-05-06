@@ -10,7 +10,7 @@
 	<form th:action="@{/formData}" th:object="${student}" method="post">
 		<label>nombre: </label> <input type="text" th:field="*{nombre}"><br>
 		<label>apellido: </label> <input type="text" th:field="*{apellido}"><br>
-		<label>fecha de entrada: </label> <input type="text" th:field="*{fEntrada}"><br>
+		<label>fecha de entrada: </label> <input type="date" th:field="*{fEntrada}"><br>
 		<label>carrera: </label> <input type="text" th:field="*{carrera}"><br>
 		<label>activo: </label> <input type="radio" th:field="*{estado}" th:value="${true}"><br>
 		<label>inactivo: </label> <input type="radio" th:field="*{estado}" th:value="${false}"><br>
